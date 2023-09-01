@@ -1,39 +1,61 @@
-/* body {
+/* Top Styles */
+.bg-image {
 	background-image: url("img/snowy-mountains.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-} */
+	height: 50vh;
+}
 
-ul {
+.navbar {
 	display: flex;
 	justify-content: center;
 	text-decoration: underline;
-	color: white;
 	list-style: none;
-  margin-left: 30%;
+	margin-left: 30%;
+}
+
+a {
+	text-decoration-color: white;
 }
 
 li {
 	margin-left: 1.25rem;
 }
 
-h1 {
+.history,
+.team {
+	color: white;
+}
+
+h1.la,
+h1.mtns {
 	display: flex;
 	justify-content: center;
 }
 
 .la {
 	color: #767676;
-  margin-top: 5rem
+	margin-top: 5rem;
 }
 
 .mtns {
 	color: #000066;
 }
 
-.bg-image {
-  background-image: url("img/snowy-mountains.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-  height: 50vh;
+/* Middle Styles */
+.m-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.m-la {
+	color: #767676;
+}
+
+.m-mtns,
+.m-history,
+.m-team {
+	color: #000066;
 }
