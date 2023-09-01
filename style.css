@@ -1,0 +1,32 @@
+body {
+	background-image: url("img/snowy-mountains.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	text-decoration: underline;
+	color: white;
+	list-style: none;
+  margin-left: 30%;
+}
+
+li {
+	margin-left: 1.25rem;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.la {
+	color: #767676;
+  margin-top: 5rem
+}
+
+.mtns {
+	color: #000066;
+}
