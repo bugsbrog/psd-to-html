@@ -1,3 +1,7 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
 /* Top Styles */
 .bg-image {
 	background-image: url("img/snowy-mountains.jpg");
@@ -8,7 +12,7 @@
 
 .navbar {
 	display: flex;
-	justify-content: center;
+	justify-content: center !important;
 	text-decoration: underline;
 	list-style: none;
 	margin-left: 30%;
@@ -58,4 +62,30 @@ h1.mtns {
 .m-history,
 .m-team {
 	color: #000066;
+}
+
+/* History Section */
+.history-img {
+	background-image: url("img/history-image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 50vh;
+}
+
+.h-s {
+	color: #000066;
+	font-size: 3rem;
+}
+
+.lorem {
+  font-size: 15px;
+  margin: 2rem;
+}
+
+img, .carousel {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+	width: 100%;
 }
