@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+/* Top Styles */
+.bg-image {
+	background-image: url("img/snowy-mountains.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center !important;
+	text-decoration: underline;
+	list-style: none;
+	margin-left: 30%;
+}
+
+a {
+	text-decoration-color: white;
+}
+
+li {
+	margin-left: 1.25rem;
+}
+
+.history,
+.team {
+	color: white;
+}
+
+h1.la,
+h1.mtns {
+	display: flex;
+	justify-content: center;
+}
+
+.la {
+	color: #767676;
+	margin-top: 5rem;
+}
+
+.mtns {
+	color: #000066;
+}
+
+/* Middle Styles */
+.m-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.m-la {
+	color: #767676;
+}
+
+.m-mtns,
+.m-history,
+.m-team {
+	color: #000066;
+}
+
+/* History Section */
+.history-img {
+	background-image: url("img/history-image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 50vh;
+}
+
+.h-s {
+	color: #000066;
+	font-size: 2rem;
+	margin: 2rem;
+}
+
+.lorem {
+	font-size: 15px;
+	margin: 2rem;
+}
+
+img,
+.carousel {
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+/* Climb Section */
+.c-s {
+	color: #000066;
+	font-size: 2rem;
+	margin: 2rem;
+}
+
+.op {
+	font-size: 3rem;
+	opacity: 0.3 !important;
+}
+
+/* Mountains Section */
+.blue {
+	width: 100%;
+	height: 5vh;
+	background-color: #000066;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttons {
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+.buttons button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 1rem;
+}
+
+.buttons button:hover {
+	background-color: #ddd;
+}
+
+.buttons button.active {
+	background-color: #ccc;
+}
+
+.mtn1 {
+	text-align: center;
+	margin-right: 20px;
+}
+
+.mtn1:hover {
+	background-color: gray;
+	text-decoration: underline;
+}
+
+.mtn2 {
+	text-align: center;
+}
+
+.mtn2:hover {
+	background-color: gray;
+	text-decoration: underline;
+}
+
+.mountain-img {
+	background-image: url("img/mountain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+}
+
+/* Schedule Styles */
+.schedule1-div {
+	text-align: center;
+}
+
+.sch1 {
+	color: #000066;
+	text-align: center;
+}
+
+/* Footer Styles */
+.footer-nav {
+	display: flex;
+	margin-right: 20rem;
+}
+
+.footer-la {
+	color: white;
+}
+
+.footer-mtns {
+	color: #00688b;
+}
+
+.copyright {
+	color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.25s;
+	position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	background: #000066;
+	transform: rotate(0);
+	transition: all 0.5s;
+}
+
+.hamburger-middle {
+	transform: translateY(7px);
+}
+
+.hamburger-bottom {
+	transform: translateY(14px);
+}
+
+.open {
+	transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+	transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+	display: none;
+}
+
+.open .hamburger-bottom {
+	transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}

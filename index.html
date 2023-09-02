@@ -8,43 +8,88 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="bg-image">
-    <nav>
-      <ul class="navbar">
-        <a href="#history">
-          <li class="history">01. HISTORY</li>
-        </a>
-        <a href="#team">
-          <li class="team">02. TEAM</li>
-        </a>
-      </ul>
+  <div class="bg-snowy-mountain bg-no-repeat bg-cover h-fit">
+    <nav class="flex items-center justify-between font-bold
+    text-white">
+      <!-- Menu -->
+      <div class="hidden h-10 md:flex md:space-x-8">
+        <div class="group">
+          <a href="#history">01. HISTORY</a>
+          <div class="mx-2 group-hover:border-b 
+          group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="#climb">02. TEAM</a>
+          <div class="mx-2 group-hover:border-b 
+          group-hover:border-blue-50"></div>
+        </div>
+      </div>
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" type="button" class="z-40 block
+        hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
     </nav>
+    <!-- Mobile Menu -->
+    <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col self-end
+    w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg 
+    text-white uppercase bg-black">
+      <a href="#history" class="hover:text-pink-500">01. HISTORY</a>
+      <a href="#climb" class="hover:text-pink-500">02. TEAM</a>
+    </div>
     <div class="heading">
-      <h1 class="la">LOSANGELES</h1>
-      <h1 class="mtns">MOUNTAINS</h1>
+      <h1 class="la text-5xl">LOSANGELES</h1>
+      <h1 class="mtns text-5xl">MOUNTAINS</h1>
     </div>
   </div>
-  <nav>
-    <ul class="m-nav">
-      <h3 class="m-la">LOSANGELES</h3>
-      <h3 class="m-mtns">MOUNTAINS</h3>
-      <a style="text-decoration-color: #000066;
-      " href="#history">
-        <li class="m-history">01. HISTORY</li>
-      </a>
-      <a style="text-decoration-color: #000066;
-      " href="#team">
-        <li class="m-team">02. TEAM</li>
-      </a>
-    </ul>
+  <nav class="flex items-center justify-between font-bold
+  text-blue-800">
+    <!-- Menu -->
+    <div class="hidden h-10 md:flex md:space-x-8">
+      <div class="heading">
+        <h1 class="m-la">LOSANGELES</h1>
+        <h1 class="m-mtns">MOUNTAINS</h1>
+      </div>
+      <div class="group">
+        <a href="#history">01. HISTORY</a>
+        <div class="mx-2 group-hover:border-b 
+        group-hover:border-blue-50"></div>
+      </div>
+      <div class="group">
+        <a href="#climb">02. TEAM</a>
+        <div class="mx-2 group-hover:border-b 
+        group-hover:border-blue-50"></div>
+      </div>
+    </div>
+    <!-- Hamburger Button -->
+    <div class="md:hidden">
+      <button id="menu-btn2" type="button" class="z-40 block
+      hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
   </nav>
-  <div class="history-img">
+  <!-- Mobile Menu -->
+  <div id="menu2" class="absolute top-0 bottom-0 left-0 hidden flex-col self-end
+  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg 
+  text-white uppercase bg-black">
+    <a href="#history" class="hover:text-pink-500">01. HISTORY</a>
+    <a href="#climb" class="hover:text-pink-500">02. TEAM</a>
+  </div>
+  <div class="bg-history bg-no-repeat bg-cover h-fit">
     <section id="history">
-      <h1 class="h-s"><span>01.</span> History</h1>
+      <h1 class="h-s"><span class="op">01.</span> History</h1>
       <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, facilis culpa incidunt
         dolores iusto
         blanditiis accusantium quo soluta sed dignissimos nobis unde, minima quos, reiciendis nisi quam. Perspiciatis
@@ -66,6 +111,41 @@
         </div>
       </div>
   </div>
+  </section>
+  <section id="climb">
+    <h1 class="c-s"><span class="op">02.</span> Climb</h1>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam earum cum voluptatum? Adipisci,
+      excepturi dolore.</p>
+  </section>
+  <section class="mountains">
+    <div class="blue">
+      <div class="buttons">
+        <button class="mtn1">Mountain 1</button>
+        <button class="mtn2">Mountain 2</button>
+      </div>
+    </div>
+    <div class="bg-mountain-img bg-no-repeat bg-cover h-fit">
+      <div class="schedule1-div">
+        <h2 class="sch1">SCHEDULE</h2>
+        <p>25 Nov 2016 Vestibulum viverra</p>
+        <p>28 Nov 2016 Vestibulum viverra</p>
+        <p>18 Dec 2016 Vestibulum viverra</p>
+        <p>7 Jan 2017 Vestibulum viverra</p>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <footer>
+      <div class="blue">
+        <nav>
+          <ul class="footer-nav">
+            <h3 class="footer-la">LOSANGELES</h3>
+            <h3 class="footer-mtns">MOUNTAINS</h3>
+          </ul>
+        </nav>
+        <p class="copyright">&copy; 2016 ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
   </section>
 
 </body>
